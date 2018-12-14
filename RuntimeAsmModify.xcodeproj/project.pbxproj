@@ -8,27 +8,49 @@
 
 /* Begin PBXBuildFile section */
 		C4E1F6DE21C0B70E00FDFEE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E1F6DD21C0B70E00FDFEE2 /* main.m */; };
+		C4E1F71F21C232D500FDFEE2 /* AsmModifyDynamic.h in Headers */ = {isa = PBXBuildFile; fileRef = C4E1F71E21C232D500FDFEE2 /* AsmModifyDynamic.h */; };
+		C4E1F72121C232D500FDFEE2 /* AsmModifyDynamic.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E1F72021C232D500FDFEE2 /* AsmModifyDynamic.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4E1F72A21C235B700FDFEE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4E1F6D221C0B70E00FDFEE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4E1F71B21C232D400FDFEE2;
+			remoteInfo = AsmModifyDynamic;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		C4E1F6D821C0B70E00FDFEE2 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C4E1F6DA21C0B70E00FDFEE2 /* RuntimeAsmModify */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RuntimeAsmModify; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E1F6DD21C0B70E00FDFEE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C4E1F71C21C232D400FDFEE2 /* libAsmModifyDynamic.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libAsmModifyDynamic.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4E1F71E21C232D500FDFEE2 /* AsmModifyDynamic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsmModifyDynamic.h; sourceTree = "<group>"; };
+		C4E1F72021C232D500FDFEE2 /* AsmModifyDynamic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsmModifyDynamic.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C4E1F6D721C0B70E00FDFEE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4E1F71921C232D400FDFEE2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,7 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				C4E1F6DC21C0B70E00FDFEE2 /* RuntimeAsmModify */,
+				C4E1F71D21C232D500FDFEE2 /* AsmModifyDynamic */,
 				C4E1F6DB21C0B70E00FDFEE2 /* Products */,
+				C4E1F72721C2337F00FDFEE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				C4E1F6DA21C0B70E00FDFEE2 /* RuntimeAsmModify */,
+				C4E1F71C21C232D400FDFEE2 /* libAsmModifyDynamic.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,7 +87,34 @@
 			path = RuntimeAsmModify;
 			sourceTree = "<group>";
 		};
+		C4E1F71D21C232D500FDFEE2 /* AsmModifyDynamic */ = {
+			isa = PBXGroup;
+			children = (
+				C4E1F71E21C232D500FDFEE2 /* AsmModifyDynamic.h */,
+				C4E1F72021C232D500FDFEE2 /* AsmModifyDynamic.m */,
+			);
+			path = AsmModifyDynamic;
+			sourceTree = "<group>";
+		};
+		C4E1F72721C2337F00FDFEE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C4E1F71A21C232D400FDFEE2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4E1F71F21C232D500FDFEE2 /* AsmModifyDynamic.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		C4E1F6D921C0B70E00FDFEE2 /* RuntimeAsmModify */ = {
@@ -72,15 +124,34 @@
 				C4E1F6D621C0B70E00FDFEE2 /* Sources */,
 				C4E1F6D721C0B70E00FDFEE2 /* Frameworks */,
 				C4E1F6D821C0B70E00FDFEE2 /* CopyFiles */,
+				C42732F521C2519100C89B1B /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C4E1F72B21C235B700FDFEE2 /* PBXTargetDependency */,
 			);
 			name = RuntimeAsmModify;
 			productName = RuntimeAsmModify;
 			productReference = C4E1F6DA21C0B70E00FDFEE2 /* RuntimeAsmModify */;
 			productType = "com.apple.product-type.tool";
+		};
+		C4E1F71B21C232D400FDFEE2 /* AsmModifyDynamic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4E1F72221C232D500FDFEE2 /* Build configuration list for PBXNativeTarget "AsmModifyDynamic" */;
+			buildPhases = (
+				C4E1F71821C232D400FDFEE2 /* Sources */,
+				C4E1F71921C232D400FDFEE2 /* Frameworks */,
+				C4E1F71A21C232D400FDFEE2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AsmModifyDynamic;
+			productName = AsmModifyDynamic;
+			productReference = C4E1F71C21C232D400FDFEE2 /* libAsmModifyDynamic.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
 
@@ -92,6 +163,10 @@
 				ORGANIZATIONNAME = "周维鸥";
 				TargetAttributes = {
 					C4E1F6D921C0B70E00FDFEE2 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					C4E1F71B21C232D400FDFEE2 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
@@ -110,9 +185,26 @@
 			projectRoot = "";
 			targets = (
 				C4E1F6D921C0B70E00FDFEE2 /* RuntimeAsmModify */,
+				C4E1F71B21C232D400FDFEE2 /* AsmModifyDynamic */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C42732F521C2519100C89B1B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#cd ${TARGET_BUILD_DIR}\n#DYLD_INSERT_LIBRARIES=./libAsmModifyDynamic.dylib ./RuntimeAsmModify";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C4E1F6D621C0B70E00FDFEE2 /* Sources */ = {
@@ -123,7 +215,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C4E1F71821C232D400FDFEE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4E1F72121C232D500FDFEE2 /* AsmModifyDynamic.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4E1F72B21C235B700FDFEE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4E1F71B21C232D400FDFEE2 /* AsmModifyDynamic */;
+			targetProxy = C4E1F72A21C235B700FDFEE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C4E1F6DF21C0B70E00FDFEE2 /* Debug */ = {
@@ -245,6 +353,28 @@
 			};
 			name = Release;
 		};
+		C4E1F72321C232D500FDFEE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C4E1F72421C232D500FDFEE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -262,6 +392,15 @@
 			buildConfigurations = (
 				C4E1F6E221C0B70E00FDFEE2 /* Debug */,
 				C4E1F6E321C0B70E00FDFEE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4E1F72221C232D500FDFEE2 /* Build configuration list for PBXNativeTarget "AsmModifyDynamic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4E1F72321C232D500FDFEE2 /* Debug */,
+				C4E1F72421C232D500FDFEE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
